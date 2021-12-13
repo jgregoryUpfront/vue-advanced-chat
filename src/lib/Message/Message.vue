@@ -27,7 +27,7 @@
 			class="vac-message-box"
 			:class="{ 'vac-offset-current': message.senderId === currentUserId }"
 		>
-			<slot name="message" v-bind="{ message }">
+			<slot name="message" v-bind="$props">
 				<div
 					v-if="message.avatar && message.senderId !== currentUserId"
 					class="vac-avatar"
