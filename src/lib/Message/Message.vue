@@ -16,7 +16,7 @@
 				:link-options="linkOptions"
 				@open-user-tag="openUserTag"
 			>
-				<template v-for="(i, name) in $slots" #[name]="data">
+				<template v-for="(i, name) in $scopedSlots" #[name]="data">
 					<slot :name="name" v-bind="data" />
 				</template>
 			</format-message>
@@ -27,7 +27,7 @@
 			class="vac-message-box"
 			:class="{ 'vac-offset-current': message.senderId === currentUserId }"
 		>
-			<slot name="message" v-bind="$props">
+			<slot name="message" v-bind="{ message }">
 				<div
 					v-if="message.avatar && message.senderId !== currentUserId"
 					class="vac-avatar"
@@ -39,6 +39,9 @@
 						'vac-message-container-offset': messageOffset
 					}"
 				>
+          <div class="vac-text-sender">
+            <span>{{ message.senderName }}</span>
+          </div>
 					<div
 						class="vac-message-card"
 						:class="{
@@ -66,7 +69,7 @@
 							:text-formatting="textFormatting"
 							:link-options="linkOptions"
 						>
-							<template v-for="(i, name) in $slots" #[name]="data">
+							<template v-for="(i, name) in $scopedSlots" #[name]="data">
 								<slot :name="name" v-bind="data" />
 							</template>
 						</message-reply>
@@ -86,7 +89,7 @@
 							:link-options="linkOptions"
 							@open-user-tag="openUserTag"
 						>
-							<template v-for="(i, name) in $slots" #[name]="data">
+							<template v-for="(i, name) in $scopedSlots" #[name]="data">
 								<slot :name="name" v-bind="data" />
 							</template>
 						</format-message>
@@ -100,7 +103,7 @@
 							:link-options="linkOptions"
 							@open-file="openFile"
 						>
-							<template v-for="(i, name) in $slots" #[name]="data">
+							<template v-for="(i, name) in $scopedSlots" #[name]="data">
 								<slot :name="name" v-bind="data" />
 							</template>
 						</message-files>
@@ -112,7 +115,7 @@
 								@update-progress-time="progressTime = $event"
 								@hover-audio-progress="hoverAudioProgress = $event"
 							>
-								<template v-for="(i, name) in $slots" #[name]="data">
+								<template v-for="(i, name) in $scopedSlots" #[name]="data">
 									<slot :name="name" v-bind="data" />
 								</template>
 							</audio-player>
@@ -162,7 +165,7 @@
 							@message-action-handler="messageActionHandler"
 							@send-message-reaction="sendMessageReaction"
 						>
-							<template v-for="(i, name) in $slots" #[name]="data">
+							<template v-for="(i, name) in $scopedSlots" #[name]="data">
 								<slot :name="name" v-bind="data" />
 							</template>
 						</message-actions>
@@ -174,6 +177,21 @@
 						@send-message-reaction="sendMessageReaction"
 					/>
 				</div>
+				<slot name="message-failure" v-bind="{ message }">
+					<div
+						v-if="message.failure && message.senderId === currentUserId"
+						class="vac-failure-container vac-svg-button"
+						:class="{
+							'vac-failure-container-avatar':
+								message.avatar && message.senderId === currentUserId
+						}"
+						@click="$emit('open-failed-message', { message })"
+					>
+						<div class="vac-failure-text">
+							!
+						</div>
+					</div>
+				</slot>
 				<div
 					v-if="message.avatar && message.senderId === currentUserId"
 					class="vac-avatar vac-avatar-current"
@@ -222,7 +240,7 @@ export default {
 		newMessages: { type: Array, default: () => [] },
 		showReactionEmojis: { type: Boolean, required: true },
 		showNewMessagesDivider: { type: Boolean, required: true },
-		textFormatting: { type: Boolean, required: true },
+		textFormatting: { type: Object, required: true },
 		linkOptions: { type: Object, required: true },
 		hideOptions: { type: Boolean, required: true }
 	},
@@ -232,6 +250,7 @@ export default {
 		'message-added',
 		'open-file',
 		'open-user-tag',
+		'open-failed-message',
 		'message-action-handler',
 		'send-message-reaction'
 	],

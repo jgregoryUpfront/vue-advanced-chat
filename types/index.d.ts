@@ -60,6 +60,7 @@ export interface Message {
 	_id: StringNumber
 	content: string
 	senderId: StringNumber
+  senderName?: string
 	date: string
 	timestamp: string
 	username?: string
