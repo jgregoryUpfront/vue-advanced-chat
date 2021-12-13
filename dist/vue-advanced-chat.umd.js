@@ -37396,39 +37396,48 @@ function RoomTemplatesTextvue_type_template_id_01c840e1_render(_ctx, _cache, $pr
 const RoomTemplatesText_exports_ = /*#__PURE__*/exportHelper_default()(RoomTemplatesTextvue_type_script_lang_js, [['render',RoomTemplatesTextvue_type_template_id_01c840e1_render]])
 
 /* harmony default export */ var RoomTemplatesText = (RoomTemplatesText_exports_);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/vue-loader-v16/dist/templateLoader.js??ref--7!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader-v16/dist??ref--1-1!./src/lib/Message/Message.vue?vue&type=template&id=aadbe850
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/vue-loader-v16/dist/templateLoader.js??ref--7!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader-v16/dist??ref--1-1!./src/lib/Message/Message.vue?vue&type=template&id=b6f120de
 
-var Messagevue_type_template_id_aadbe850_hoisted_1 = ["id"];
-var Messagevue_type_template_id_aadbe850_hoisted_2 = {
+var Messagevue_type_template_id_b6f120de_hoisted_1 = ["id"];
+var Messagevue_type_template_id_b6f120de_hoisted_2 = {
   key: 0,
   "class": "vac-card-info vac-card-date"
 };
-var Messagevue_type_template_id_aadbe850_hoisted_3 = {
+var Messagevue_type_template_id_b6f120de_hoisted_3 = {
   key: 1,
   "class": "vac-line-new"
 };
-var Messagevue_type_template_id_aadbe850_hoisted_4 = {
+var Messagevue_type_template_id_b6f120de_hoisted_4 = {
   key: 2,
   "class": "vac-card-info vac-card-system"
 };
-var Messagevue_type_template_id_aadbe850_hoisted_5 = {
+var Messagevue_type_template_id_b6f120de_hoisted_5 = {
+  "class": "vac-text-sender"
+};
+var Messagevue_type_template_id_b6f120de_hoisted_6 = {
   key: 2
 };
-var Messagevue_type_template_id_aadbe850_hoisted_6 = {
+var Messagevue_type_template_id_b6f120de_hoisted_7 = {
   key: 0,
   "class": "vac-progress-time"
 };
-var Messagevue_type_template_id_aadbe850_hoisted_7 = {
+var Messagevue_type_template_id_b6f120de_hoisted_8 = {
   "class": "vac-text-timestamp"
 };
-var Messagevue_type_template_id_aadbe850_hoisted_8 = {
+var Messagevue_type_template_id_b6f120de_hoisted_9 = {
   key: 0,
   "class": "vac-icon-edited"
 };
-var Messagevue_type_template_id_aadbe850_hoisted_9 = {
+var Messagevue_type_template_id_b6f120de_hoisted_10 = {
   key: 1
 };
-function Messagevue_type_template_id_aadbe850_render(_ctx, _cache, $props, $setup, $data, $options) {
+
+var Messagevue_type_template_id_b6f120de_hoisted_11 = /*#__PURE__*/Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("div", {
+  "class": "vac-failure-text"
+}, " ! ", -1);
+
+var Messagevue_type_template_id_b6f120de_hoisted_12 = [Messagevue_type_template_id_b6f120de_hoisted_11];
+function Messagevue_type_template_id_b6f120de_render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_format_message = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("format-message");
 
   var _component_message_reply = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("message-reply");
@@ -37447,7 +37456,7 @@ function Messagevue_type_template_id_aadbe850_render(_ctx, _cache, $props, $setu
     id: $props.message._id,
     ref: "message",
     "class": "vac-message-wrapper"
-  }, [$options.showDate ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", Messagevue_type_template_id_aadbe850_hoisted_2, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])($props.message.date), 1)) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), $data.newMessage._id === $props.message._id ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", Messagevue_type_template_id_aadbe850_hoisted_3, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])($props.textMessages.NEW_MESSAGES), 1)) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), $props.message.system ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", Messagevue_type_template_id_aadbe850_hoisted_4, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(_component_format_message, {
+  }, [$options.showDate ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", Messagevue_type_template_id_b6f120de_hoisted_2, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])($props.message.date), 1)) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), $data.newMessage._id === $props.message._id ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", Messagevue_type_template_id_b6f120de_hoisted_3, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])($props.textMessages.NEW_MESSAGES), 1)) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), $props.message.system ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", Messagevue_type_template_id_b6f120de_hoisted_4, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(_component_format_message, {
     content: $props.message.content,
     users: $props.roomUsers,
     "text-formatting": $props.textFormatting,
@@ -37467,7 +37476,9 @@ function Messagevue_type_template_id_aadbe850_render(_ctx, _cache, $props, $setu
     "class": Object(external_commonjs_vue_commonjs2_vue_root_Vue_["normalizeClass"])(["vac-message-box", {
       'vac-offset-current': $props.message.senderId === $props.currentUserId
     }])
-  }, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["renderSlot"])(_ctx.$slots, "message", Object(external_commonjs_vue_commonjs2_vue_root_Vue_["normalizeProps"])(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["guardReactiveProps"])(_ctx.$props)), function () {
+  }, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["renderSlot"])(_ctx.$slots, "message", Object(external_commonjs_vue_commonjs2_vue_root_Vue_["normalizeProps"])(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["guardReactiveProps"])({
+    message: $props.message
+  })), function () {
     return [$props.message.avatar && $props.message.senderId !== $props.currentUserId ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", {
       key: 0,
       "class": "vac-avatar",
@@ -37478,7 +37489,7 @@ function Messagevue_type_template_id_aadbe850_render(_ctx, _cache, $props, $setu
       "class": Object(external_commonjs_vue_commonjs2_vue_root_Vue_["normalizeClass"])(["vac-message-container", {
         'vac-message-container-offset': $options.messageOffset
       }])
-    }, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("div", {
+    }, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("div", Messagevue_type_template_id_b6f120de_hoisted_5, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("span", null, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])($props.message.senderName), 1)]), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("div", {
       "class": Object(external_commonjs_vue_commonjs2_vue_root_Vue_["normalizeClass"])(["vac-message-card", {
         'vac-message-highlight': $options.isMessageHover,
         'vac-message-current': $props.message.senderId === $props.currentUserId,
@@ -37510,7 +37521,7 @@ function Messagevue_type_template_id_aadbe850_render(_ctx, _cache, $props, $setu
           return [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["renderSlot"])(_ctx.$slots, name, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["normalizeProps"])(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["guardReactiveProps"])(data)))];
         })
       };
-    })]), 1032, ["message", "room-users", "text-formatting", "link-options"])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), $props.message.deleted ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", Messagevue_type_template_id_aadbe850_hoisted_5, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["renderSlot"])(_ctx.$slots, "deleted-icon", {}, function () {
+    })]), 1032, ["message", "room-users", "text-formatting", "link-options"])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), $props.message.deleted ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", Messagevue_type_template_id_b6f120de_hoisted_6, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["renderSlot"])(_ctx.$slots, "deleted-icon", {}, function () {
       return [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(_component_svg_icon, {
         name: "deleted",
         "class": "vac-icon-deleted"
@@ -37568,11 +37579,11 @@ function Messagevue_type_template_id_aadbe850_render(_ctx, _cache, $props, $setu
           return [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["renderSlot"])(_ctx.$slots, name, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["normalizeProps"])(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["guardReactiveProps"])(data)))];
         })
       };
-    })]), 1032, ["message-id", "src"]), !$props.message.deleted ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", Messagevue_type_template_id_aadbe850_hoisted_6, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])($data.progressTime), 1)) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true)], 64)), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("div", Messagevue_type_template_id_aadbe850_hoisted_7, [$props.message.edited && !$props.message.deleted ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", Messagevue_type_template_id_aadbe850_hoisted_8, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["renderSlot"])(_ctx.$slots, "pencil-icon", {}, function () {
+    })]), 1032, ["message-id", "src"]), !$props.message.deleted ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", Messagevue_type_template_id_b6f120de_hoisted_7, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])($data.progressTime), 1)) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true)], 64)), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("div", Messagevue_type_template_id_b6f120de_hoisted_8, [$props.message.edited && !$props.message.deleted ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", Messagevue_type_template_id_b6f120de_hoisted_9, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["renderSlot"])(_ctx.$slots, "pencil-icon", {}, function () {
       return [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(_component_svg_icon, {
         name: "pencil"
       })];
-    })])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("span", null, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])($props.message.timestamp), 1), $options.isCheckmarkVisible ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("span", Messagevue_type_template_id_aadbe850_hoisted_9, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["renderSlot"])(_ctx.$slots, "checkmark-icon", Object(external_commonjs_vue_commonjs2_vue_root_Vue_["normalizeProps"])(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["guardReactiveProps"])({
+    })])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("span", null, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])($props.message.timestamp), 1), $options.isCheckmarkVisible ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("span", Messagevue_type_template_id_b6f120de_hoisted_10, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["renderSlot"])(_ctx.$slots, "checkmark-icon", Object(external_commonjs_vue_commonjs2_vue_root_Vue_["normalizeProps"])(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["guardReactiveProps"])({
       message: $props.message
     })), function () {
       return [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(_component_svg_icon, {
@@ -37617,16 +37628,30 @@ function Messagevue_type_template_id_aadbe850_render(_ctx, _cache, $props, $setu
       "current-user-id": $props.currentUserId,
       message: $props.message,
       onSendMessageReaction: $options.sendMessageReaction
-    }, null, 8, ["current-user-id", "message", "onSendMessageReaction"])], 2), $props.message.avatar && $props.message.senderId === $props.currentUserId ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", {
+    }, null, 8, ["current-user-id", "message", "onSendMessageReaction"])], 2), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["renderSlot"])(_ctx.$slots, "message-failure", Object(external_commonjs_vue_commonjs2_vue_root_Vue_["normalizeProps"])(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["guardReactiveProps"])({
+      message: $props.message
+    })), function () {
+      return [$props.message.failure && $props.message.senderId === $props.currentUserId ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", {
+        key: 0,
+        "class": Object(external_commonjs_vue_commonjs2_vue_root_Vue_["normalizeClass"])(["vac-failure-container vac-svg-button", {
+          'vac-failure-container-avatar': $props.message.avatar && $props.message.senderId === $props.currentUserId
+        }]),
+        onClick: _cache[8] || (_cache[8] = function ($event) {
+          return _ctx.$emit('open-failed-message', {
+            message: $props.message
+          });
+        })
+      }, Messagevue_type_template_id_b6f120de_hoisted_12, 2)) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true)];
+    }), $props.message.avatar && $props.message.senderId === $props.currentUserId ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", {
       key: 1,
       "class": "vac-avatar vac-avatar-current",
       style: Object(external_commonjs_vue_commonjs2_vue_root_Vue_["normalizeStyle"])({
         'background-image': "url('".concat($props.message.avatar, "')")
       })
     }, null, 4)) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true)];
-  })], 2))], 8, Messagevue_type_template_id_aadbe850_hoisted_1);
+  })], 2))], 8, Messagevue_type_template_id_b6f120de_hoisted_1);
 }
-// CONCATENATED MODULE: ./src/lib/Message/Message.vue?vue&type=template&id=aadbe850
+// CONCATENATED MODULE: ./src/lib/Message/Message.vue?vue&type=template&id=b6f120de
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.reduce.js
 var es_array_reduce = __webpack_require__("13d5");
@@ -38655,7 +38680,7 @@ var _require2 = __webpack_require__("bd43"),
       required: true
     },
     textFormatting: {
-      type: Boolean,
+      type: Object,
       required: true
     },
     linkOptions: {
@@ -38667,7 +38692,7 @@ var _require2 = __webpack_require__("bd43"),
       required: true
     }
   },
-  emits: ['hide-options', 'message-added', 'open-file', 'open-user-tag', 'message-action-handler', 'send-message-reaction'],
+  emits: ['hide-options', 'message-added', 'open-file', 'open-user-tag', 'open-failed-message', 'message-action-handler', 'send-message-reaction'],
   data: function data() {
     return {
       hoverMessageId: null,
@@ -38779,7 +38804,7 @@ var _require2 = __webpack_require__("bd43"),
 
 
 
-const Message_exports_ = /*#__PURE__*/exportHelper_default()(Messagevue_type_script_lang_js, [['render',Messagevue_type_template_id_aadbe850_render]])
+const Message_exports_ = /*#__PURE__*/exportHelper_default()(Messagevue_type_script_lang_js, [['render',Messagevue_type_template_id_b6f120de_render]])
 
 /* harmony default export */ var Message = (Message_exports_);
 // CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/classCallCheck.js
