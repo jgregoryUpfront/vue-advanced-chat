@@ -71,9 +71,6 @@
 		"vue-jest": "^3.0.7",
 		"vue-loader": "^16.8.3"
 	},
-	"peerDependencies": {
-		"vue": "^2.6.14"
-	},
 	"dependencies": {
 		"emoji-picker-element": "^1.8.1",
 		"linkifyjs": "^2.1.9"
